@@ -29,8 +29,8 @@ int main(int argc, char *argv[]){
 		Function *f = *fit;
 
 		//generate graph only for these specific functions
-		if(strcmp(f->name().c_str(), "func1") != 0 && strcmp(f->name().c_str(), "func2") != 0 && strcmp(f->name().c_str(), "func3") != 0 && strcmp(f->name().c_str(), "main") != 0 && strcmp(f->name().c_str(), "printf") != 0)
-			continue;
+		//if(strcmp(f->name().c_str(), "func1") != 0 && strcmp(f->name().c_str(), "func2") != 0 && strcmp(f->name().c_str(), "func3") != 0 && strcmp(f->name().c_str(), "main") != 0 && strcmp(f->name().c_str(), "printf") != 0)
+			//continue;
 
 		cout << "\t subgraph cluster_" << i
 			<< " { \n\t\t label=\""
