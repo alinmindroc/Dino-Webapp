@@ -119,7 +119,7 @@ http://askubuntu.com/questions/502749/install-libdwarf-so-on-ubuntu
 
 
 ####Future development notes:
-* This repository has two branches: ```master```, which contains the back-end logic, and ```gh-pages```, which contains the front-end.
+* The frontend for this web app is at [dino-webapp-ui](https://github.com/alinmindroc/dino-webapp-ui)
 * The ```/tmp/dino``` directory used for storing the executables and cached results is not the best chosen, as it
 is cleared at every machine startup.
 * An example of workflow in the web app is: When the user chooses an executable file, if it is not cached in the ```cached-functions``` directory, the C++ parser is invoked from JNI. This parses the executable and writes the result to a file in the ```cached-functions``` dir. After the method is done, the file is read inside Java and the result is returned at the ```/api/functions``` endpoint. 
